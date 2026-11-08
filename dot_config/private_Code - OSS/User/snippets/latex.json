@@ -1,0 +1,15 @@
+{
+	"Centered figure": {
+		"prefix": [ "\\figure" ],
+		"body": [
+			"\\begin{figure}[H]",
+            "\t\\centering",
+            "\t\\includegraphics[width=$2\\linewidth]{$1}",
+            "\t\\caption{",
+			"\t\t\\parbox[t]{$2\\linewidth}{$3}",
+            "\t}",
+        	"\\end{figure}",
+		],
+		"description": "Centered figure"
+	}
+}
