@@ -1,0 +1,3 @@
+[submodule "external_dot_oh-my-zsh"]
+	path = external_dot_oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
