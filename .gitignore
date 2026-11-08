@@ -1,7 +1,7 @@
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/keybindings.json
-!.vscode/snippets/
+dot_vscode/*
+!dot_vscode/settings.json
+!dot_vscode/extensions.json
+!dot_vscode/tasks.json
+!dot_vscode/launch.json
+!dot_vscode/keybindings.json
+!dot_vscode/snippets/

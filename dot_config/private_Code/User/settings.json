@@ -1,0 +1,248 @@
+{
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.renderWhitespace": "none",
+	"editor.suggestSelection": "recentlyUsed",
+	"editor.accessibilitySupport": "off",
+	"explorer.confirmPasteNative": false,
+
+	"editor.tokenColorCustomizations": {
+		"[Visual Studio Dark]": {
+			"types": "#a9d3e0",
+			"textMateRules": [
+				{
+					"scope": "variable.parameter.c, variable.other.object.c",
+					"settings": {
+						"foreground": "#bdb99a"
+					}
+				}
+			]
+		}
+	},
+
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.sideBar.location": "left",
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.colorTheme": "Visual Studio Dark",
+	"workbench.iconTheme": "material-icon-theme",
+
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	"explorer.compactFolders": false,
+
+	"security.workspace.trust.untrustedFiles": "open",
+	"security.workspace.trust.enabled": false,
+
+	"telemetry.telemetryLevel": "off",
+	"redhat.telemetry.enabled": false,
+
+
+	"remote.SSH.remotePlatform": {},
+
+
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	"git.autofetch": true,
+	"git.mergeEditor": false,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"gitlens.codeLens.recentChange.enabled": false,
+	"gitlens.codeLens.authors.enabled": false,
+	"gitlens.plusFeatures.enabled": false,
+	"gitlens.gitCommands.skipConfirmations": [
+		"fetch:command",
+		"switch:command",
+		"branch-create:command",
+		"stash-apply:command",
+		"stash-push:command"
+	],
+	"gitlens.views.branches.files.layout": "tree",
+	"settingsSync.ignoredSettings": [
+		"git.enableCommitSigning"
+	],
+	"gitlens.hovers.currentLine.over": "line",
+	"gitlens.advanced.messages": {
+		"suppressCreatePullRequestPrompt": true
+},
+"python.createEnvironment.trigger": "off",
+	"python.languageServer": "Default",
+
+	"C_Cpp.formatting": "vcFormat",
+	"C_Cpp.vcFormat.space.aroundBinaryOperator": "ignore",
+	"C_Cpp.vcFormat.space.pointerReferenceAlignment": "right",
+
+	"notebook.markup.fontSize": 14,
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "right"
+	},
+	"notebook.lineNumbers": "on",
+	"notebook.output.scrolling": true,
+	"jupyter.askForKernelRestart": false,
+	"jupyter.widgetScriptSources": [
+		"jsdelivr.com",
+		"unpkg.com"
+	],
+
+	"latex-workshop.view.pdf.viewer": "tab",
+	"latex-workshop.intellisense.citation.backend": "biblatex",
+	"[latex]": {
+		"editor.wordWrap": "on",
+	},
+	"[bibtex]": {
+		"editor.wordWrap": "on"
+	},
+	"[tex]": {
+		"editor.wordWrap": "on"
+	},
+	"latex-workshop.latex.autoBuild.run": "onSave",
+	"latex-workshop.latex.tools": [
+		{
+			"name": "latexmk",
+			"command": "latexmk",
+			"args": [ "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "-pdf", "-outdir=%OUTDIR%", "%DOC%" ],
+			"env": {}
+		},
+		{
+			"name": "lualatexmk",
+			"command": "latexmk",
+			"args": [ "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "-lualatex", "-outdir=%OUTDIR%", "%DOC%" ],
+			"env": {}
+		},
+		{
+			"name": "xelatexmk",
+			"command": "latexmk",
+			"args": [ "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "-xelatex", "-outdir=%OUTDIR%", "%DOC%" ],
+			"env": {}
+		},
+		{
+			"name": "latexmk_rconly",
+			"command": "latexmk",
+			"args": [ "%DOC%" ],
+			"env": {}
+		},
+		{
+			"name": "pdflatex",
+			"command": "pdflatex",
+			"args": [ "-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%" ],
+			"env": {}
+		},
+		{
+			"name": "bibtex",
+			"command": "bibtex",
+			"args": [ "%DOCFILE%" ],
+			"env": {}
+		},
+		{
+			"name": "rnw2tex",
+			"command": "Rscript",
+			"args": [ "-e", "knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')" ],
+			"env": {}
+		},
+		{
+			"name": "jnw2tex",
+			"command": "julia",
+			"args": [ "-e", "using Weave; weave(\"%DOC_EXT%\", doctype=\"tex\")" ],
+			"env": {}
+		},
+		{
+			"name": "jnw2texminted",
+			"command": "julia",
+			"args": [ "-e", "using Weave; weave(\"%DOC_EXT%\", doctype=\"texminted\")" ],
+			"env": {}
+		},
+		{
+			"name": "pnw2tex",
+			"command": "pweave",
+			"args": [ "-f", "tex", "%DOC_EXT%" ],
+			"env": {}
+		},
+		{
+			"name": "pnw2texminted",
+			"command": "pweave",
+			"args": [ "-f", "texminted", "%DOC_EXT%" ],
+			"env": {}
+		},
+		{
+			"name": "tectonic",
+			"command": "tectonic",
+			"args": [ "--synctex", "--keep-logs", "%DOC%.tex" ],
+			"env": {}
+		}
+	],
+
+	"[plaintext]": {
+		"editor.wordWrap": "on"
+	},
+	"[markdown]": {
+		"editor.wordWrap": "on",
+	},
+
+	
+	"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"terminal.integrated.profiles.windows": {
+		"PowerShell": {
+			"source": "PowerShell",
+			"icon": "terminal-powershell"
+		},
+		"Command Prompt": {
+			"path": [
+				"${env:windir}\\Sysnative\\cmd.exe",
+				"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Git Bash": {
+			"source": "Git Bash"
+		},
+		"Ubuntu (WSL)": {
+			"path": "C:\\WINDOWS\\System32\\wsl.exe",
+			"args": [
+				"-d",
+				"Ubuntu"
+			]
+		}
+	},
+
+	"terminal.integrated.defaultProfile.linux": "zsh",
+
+
+	"vscode-pets.petSize": "medium",
+
+
+	"projectManager.tags": [
+		"Personal",
+		"Work",
+		"Uni"
+	],
+
+
+	"ltex.additionalRules.enablePickyRules": true,
+	"ltex.additionalRules.motherTongue": "it",
+	"ltex.statusBarItem": true,
+	"editor.mouseWheelScrollSensitivity": 1.5,
+	"git.openRepositoryInParentFolders": "never",
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"editor.unicodeHighlight.invisibleCharacters": false,
+	"notebook.editorOptionsCustomizations": {
+		"editor.insertSpaces": true
+	},
+	"github.copilot.enable": {
+		"*": false,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"editor.fontFamily": "'monospace', monospace",
+	"chat.viewSessions.orientation": "stacked",
+	"vscode-pets.theme": "autumn",
+	"yaml.disableSchemaDetection": [
+		"**/.github/workflows/*.yml",
+		"**/.github/workflows/*.yaml",
+		"**/.gitea/workflows/*.yml",
+		"**/.gitea/workflows/*.yaml",
+		"**/.forgejo/workflows/*.yml",
+		"**/.forgejo/workflows/*.yaml"
+	],
+}
