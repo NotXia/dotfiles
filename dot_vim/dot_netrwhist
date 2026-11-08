@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
-let g:netrw_dirhist_7='/etc/NetworkManager/conf.d'
-let g:netrw_dirhist_6='/home/xia/.config/gtk-3.0'
-let g:netrw_dirhist_5='/home/xia/.config/VSCodium'
-let g:netrw_dirhist_4='/home/xia/Documents/.secrets/2fa'
-let g:netrw_dirhist_3='/home/xia/.config/gtk-2.0'
-let g:netrw_dirhist_2='/boot/grub/locale'
-let g:netrw_dirhist_1='/etc/modprobe.d'
